@@ -2,6 +2,20 @@
 
 A [hardhat-circom](https://github.com/projectsophon/hardhat-circom) template to generate zero-knowledge circuits, proofs, and solidity verifiers
 
+## Inputs
+
+Ainp : 0
+
+Binp : 1
+
+## Circuit
+
+1 AND gate
+
+1 NOT gate
+
+1 OR gate
+
 ## Quick Start
 Compile the Multiplier2() circuit and verify it against a smart contract verifier
 
@@ -103,3 +117,8 @@ npx hardhat newcircuit --name newcircuit
 **determinism**
 > When you recompile the same circuit using the groth16 protocol, even with no changes, this plugin will apply a new final beacon, changing all the zkey output files. This also causes your Verifier contracts to be updated.
 > For development builds of groth16 circuits, we provide the --deterministic flag in order to use a NON-RANDOM and UNSECURE hardcoded entropy (0x000000 by default) which will allow you to more easily inspect and catch changes in your circuits. You can adjust this default beacon by setting the beacon property on a circuit's config in your hardhat.config.js file.
+
+
+## Authors
+
+Sangamesh Y[@sangamessshhh@gmail.com]
